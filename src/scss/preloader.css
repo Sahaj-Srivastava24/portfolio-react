@@ -1,0 +1,38 @@
+.preloader {
+  position: absolute;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  z-index: 100;
+}
+
+.fold {
+  min-width: 20vw;
+  min-height: 100vh;
+  background-color: #242424;
+}
+
+.line {
+  position: relative;
+  top: 0%;
+  left: 50%;
+  height: 0vh;
+  width: 0.1vw;
+  background-color: white;
+}
+
+.gridLines {
+  position: absolute;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  z-index: 0;
+}
+
+.maskLine {
+  position: relative;
+  margin-left: 19.95vw;
+  height: 0;
+  width: 0.05vw;
+  background-color: rgb(106, 106, 106, 0.2);
+}

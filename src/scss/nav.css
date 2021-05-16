@@ -1,0 +1,94 @@
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  position: absolute;
+  height: 10vh;
+  width: 100vw;
+  color: #8b8b8b;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+}
+.left_name .tilt {
+  display: block;
+  transform-style: preserve-3d;
+  transform-origin: left center;
+  transform: rotateY(60deg);
+}
+
+.right_res span {
+  position: relative;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  padding: 1.2rem;
+}
+
+.wrap {
+  display: flex;
+  transform: rotateY(0deg);
+  transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform-style: preserve-3d;
+}
+.row {
+  width: 800px;
+  position: relative;
+  z-index: 2;
+  color: #8b8b8b;
+  font-size: 20px;
+  font-weight: bold;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg) translateX(-13.5rem);
+  transition: all 3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.row:hover .wrap {
+  transform: rotateY(-45deg);
+  cursor: pointer;
+}
+.row:hover {
+  z-index: 1;
+}
+.row:hover {
+  width: 55%;
+}
+
+.row .left {
+  width: 400px;
+  padding: 15px 20px;
+  text-align: right;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+}
+.row .left:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  transition: width 1s ease-in-out;
+}
+.row .right {
+  width: 400px;
+  padding: 15px 20px;
+  text-align: left;
+  color: red;
+  transform: rotateY(90deg);
+  transform-origin: left center;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}

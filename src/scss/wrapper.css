@@ -1,0 +1,11 @@
+.wrapper {
+  min-height: 65vh;
+  min-width: 100vw;
+  background-color: #141414;
+}
+
+.wrapper-after {
+  min-height: 35vh;
+  min-width: 100vw;
+  background-color: #0a0a0a;
+}

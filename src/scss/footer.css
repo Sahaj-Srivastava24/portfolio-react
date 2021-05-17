@@ -1,0 +1,23 @@
+.footer {
+  position: absolute;
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  padding: 3rem;
+  bottom: 0;
+  color: #8b8b8b;
+}
+
+.left_footer {
+  font-weight: lighter;
+  font-size: 0.9em;
+  letter-spacing: 0.05em;
+  align-self: flex-end;
+}
+
+.right_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 9vh;
+}

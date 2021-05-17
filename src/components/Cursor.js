@@ -35,10 +35,10 @@ const Cursor = () => {
             viewBox="0 0 70 70"
             style={{
             position: "absolute",
-            transform: `translate3d(${clientX-50}px, ${clientY-50}px, 0px) scale(${cursor.active ? 2.5 : 1})`,
-            stroke: cursor.active ? "black" : "rgb(252, 0, 0,0.5)",
+            transform: `translate3d(${clientX-(cursor.active ? 75 : 50)}px, ${clientY-(cursor.active ? 75 : 50)}px, 0px) scale(${cursor.active ? 2.5 : 1})`,
+            // stroke: cursor.active ? "black" : "rgb(252, 0, 0,0.5)",
             strokeWidth: 1,
-            fill: cursor.active ? "rgba(255,255,255,.5)" : "rgb(252, 0, 0,0.5)",
+            fill: cursor.active ? "rgb(252, 0, 0,0.1)" : "rgb(252, 0, 0,0.5)",
             transition:"0.1s cubic-bezier(0.1, 0, 0.1, 0.1), opacity 0.40s ease",
             opacity: isVisible && clientX > 1 ? 1 : 0,
             }}

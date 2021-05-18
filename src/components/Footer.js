@@ -2,7 +2,7 @@ import React, { useCallback, useContext } from 'react'
 import '../scss/footer.css'     
 import { CursorContext } from './CursorContextProvider'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export default function Footer() {
@@ -25,7 +25,7 @@ export default function Footer() {
             onMouseEnter = {handleCursorScale}
             onMouseLeave = {handleCursorScale}>
                 <a href="https://github.com/Sahaj-Srivastava24"><FontAwesomeIcon className='icon' icon = {faGithub} size='2x'/></a>
-                <a href="https://www.instagram.com/that_introvert_jerk/"><FontAwesomeIcon className='icon' icon = {faInstagram} size='2x'/></a>
+                <a href="https://www.linkedin.com/in/sahaj-srivastava-69079a1ba/"><FontAwesomeIcon className='icon' icon = {faLinkedin} size='2x'/></a>
             </div>
         </div>
     )

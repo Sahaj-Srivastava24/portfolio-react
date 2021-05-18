@@ -1,6 +1,6 @@
 import React,{ useEffect, useRef, useContext } from 'react'
 import '../scss/preloader.css'
-import { TimelineLite,Power3 } from "gsap/all";
+import gsap,{ TimelineLite, Power3 } from "gsap/all";
 import { LoaderContext } from "./PreloaderContext";
 
 
@@ -9,6 +9,7 @@ export default function Preloader() {
     const foldOne = useRef(), foldTwo = useRef(), foldThird = useRef(), foldFour = useRef(), foldFive = useRef();
     const line1 = useRef(), line2 = useRef(), line3 = useRef(), line4 = useRef(), grid= useRef();
     const prel = useRef(), line = useRef();
+    gsap.registerPlugin(TimelineLite,Power3)
 
     const [ triggerOutro ] = useContext(LoaderContext)
 

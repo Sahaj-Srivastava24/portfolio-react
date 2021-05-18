@@ -21,7 +21,7 @@ const Nav = () => {
 
     const handleCursorScale = useCallback(() => {
         setCursor(({ active }) => ({ active: !active }));
-    },[]);
+    },[setCursor]);
 
     return ( 
         <nav>

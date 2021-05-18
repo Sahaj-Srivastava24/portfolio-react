@@ -19,7 +19,7 @@ export default function Footer() {
             onMouseEnter = {handleCursorScale}
             onMouseLeave = {handleCursorScale}>
                 {/* <span> Mail:- </span> <br/> srivastavasahaj24@gmail.com  */}
-                <span><FontAwesomeIcon icon={faEnvelope} style={{ marginRight:'0.8rem'}} size='lg'/> {'  ' }srivastavasahaj24@gmail.com</span>
+                <span style={{padding: '1rem'}}><FontAwesomeIcon icon={faEnvelope} style={{ marginRight:'0.8rem'}} size='lg'/> {'  ' }srivastavasahaj24@gmail.com</span>
             </div>
             <div className="right_footer"
             onMouseEnter = {handleCursorScale}

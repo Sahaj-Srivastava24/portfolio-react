@@ -10,7 +10,6 @@ export default function Preloader() {
     const line1 = useRef(), line2 = useRef(), line3 = useRef(), line4 = useRef(), grid= useRef();
     const prel = useRef(), line = useRef();
 
-    const [tl] = useState(new TimelineLite({paused: false}));
     const [ triggerOutro ] = useContext(LoaderContext)
 
     // Testing triggeOutro
@@ -20,6 +19,7 @@ export default function Preloader() {
     // },3000)
 
     useEffect(() => {
+        const tl = new TimelineLite({paused: false});
         if(!triggerOutro){
             tl
             .to(line.current,{ease: Power3.easeOut, duration : 1.5, height: '100vh'} ,0.5)

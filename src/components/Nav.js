@@ -21,7 +21,7 @@ const Nav = () => {
 
     const handleCursorScale = useCallback(() => {
         setCursor(({ active }) => ({ active: !active }));
-    });
+    },[]);
 
     return ( 
         <nav>
@@ -38,9 +38,7 @@ const Nav = () => {
             <div className="right_res"
             onMouseEnter = {handleCursorScale}
             onMouseLeave = {handleCursorScale}>
-                <a href="#">
                     <span onClick={()=>{handleNav('/resume')}}>Resume</span>
-                </a>
             </div>
         </nav>
      );

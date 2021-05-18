@@ -10,7 +10,7 @@ export default function Footer() {
 
     const handleCursorScale = useCallback(() => {
         setCursor(({ active }) => ({ active: !active }));
-    });
+    },[]);
 
 
     return (
